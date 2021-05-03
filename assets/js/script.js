@@ -300,15 +300,14 @@ let arrPersone = [
   },
 ]
 
-let arrPatente =[]
 
- arrPersone.filter((persona) => {
+const arrPatente =arrPersone.map((persona) => {
   if(persona.eta < 18){
     let string = persona.nome+ " " + persona.cognome+ " non puo guidare  "
-    arrPatente.push(string)
+   return string;
   }else if(persona.eta > 17){
     string = persona.nome+ " " +persona.cognome+ "  puo guidare  "
-    arrPatente.push(string)
+    return string;
   }
 })
 console.log(arrPatente);
