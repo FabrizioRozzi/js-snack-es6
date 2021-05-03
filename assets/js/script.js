@@ -304,10 +304,10 @@ let arrPatente =[]
 
  arrPersone.filter((persona) => {
   if(persona.eta < 18){
-    let string = this.nome+ " " + this.cognome+ " non puo guidare  "
+    let string = persona.nome+ " " + persona.cognome+ " non puo guidare  "
     arrPatente.push(string)
   }else if(persona.eta > 17){
-    string = $(persona.nome)+ " " + $(persona.cognome)+ "  puo guidare  "
+    string = persona.nome+ " " +persona.cognome+ "  puo guidare  "
     arrPatente.push(string)
   }
 })
