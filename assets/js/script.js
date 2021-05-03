@@ -256,3 +256,59 @@
   ///////////////////////////////////////////////
   //////////////  SNACK10  //////////////////////
   ///////////////////////////////////////////////
+
+//Crea un array di oggetti che rappresentano delle persone: ogni persona ha un nome, 
+//un cognome e un’età.Crea un nuovo array inserendo per ogni persona una frase con il 
+//nome e cognome e l’indicazione se può guidare, in base all’età.
+
+
+let arrPersone = [
+  {
+    nome:'Mario',
+    cognome:'Verdi',
+    eta:60
+  },
+  {
+    nome:'Peppe',
+    cognome:'Bella',
+    eta:10
+  },
+  {
+    nome:'Giusy',
+    cognome:'Rossi',
+    eta:41
+  },
+  {
+    nome:'Gianni',
+    cognome:'Lo Scandalo',
+    eta:89
+  },
+  {
+    nome:'Mary',
+    cognome:'Coriandolo',
+    eta:18
+  },
+  {
+    nome:'Gino',
+    cognome:'Pannolino',
+    eta:15
+  },
+  {
+    nome:'Manola',
+    cognome:'La Famosa',
+    eta:20
+  },
+]
+
+let arrPatente =[]
+
+ arrPersone.filter((persona) => {
+  if(persona.eta < 18){
+    let string = this.nome+ " " + this.cognome+ " non puo guidare  "
+    arrPatente.push(string)
+  }else if(persona.eta > 17){
+    string = $(persona.nome)+ " " + $(persona.cognome)+ "  puo guidare  "
+    arrPatente.push(string)
+  }
+})
+console.log(arrPatente);
